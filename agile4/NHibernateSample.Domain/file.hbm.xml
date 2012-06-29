@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+     assembly="NHibernateSample.Domain"
+     namespace="NHibernateSample.Domain">
+
+  <class name="file" table="file">
+    <id name="id" column="id">
+      <generator class="assigned"/>
+    </id>
+    <property name="title"/>
+    <property name="type"/>
+    <property name="time"/>
+    <property name="text"/>
+    <property name="userid"/>
+    <property name="path"/>
+    <property name="audit"/>
+  </class>
+</hibernate-mapping>
